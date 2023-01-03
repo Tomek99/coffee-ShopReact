@@ -1,0 +1,87 @@
+.PopupUserProfile {
+    display: none;
+    flex-direction: column;
+    justify-content: stretch;
+    align-items: stretch;
+    gap: 10px;
+    top: 31px;
+    right: 0;
+    position: absolute;
+    background: #1e1e31;
+    color: #fff;
+    border-radius: 12px;
+    width: 250px;
+    font-size: 1.6rem;
+    list-style: none;
+    z-index: 55;
+
+    .btnSignIn_UpSection {
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+        justify-content: center;
+        gap: 10px;
+        padding: 30px 15px 5px 15px;
+
+        .btnSignIn_Up {
+            display: flex;
+            align-items: stretch;
+            justify-content: center;
+            padding: 5px 0;
+            border-radius: 20px;
+            cursor: pointer;
+
+            a {
+                width: 100%;
+                color: #fff;
+                text-transform: none;
+                text-align: center;
+            }
+
+            &:nth-of-type(1) {
+                background: var(--main-color);
+
+                &:hover {
+                    background-color: var(--main-color-darken);
+                }
+            }
+            &:nth-of-type(3) {
+                border: 1px solid var(--main-color-darken);
+
+                &:hover {
+                    background-color: var(--main-color-darken);
+                }
+            }
+        }
+
+        .infoAcc {
+            align-self: center;
+            text-transform: none;
+        }
+    }
+    .list {
+        padding-top: 10px;
+        border-top: var(--border);
+        display: flex;
+        flex-direction: column;
+
+        li {
+            a {
+                display: flex;
+                flex-direction: row;
+                justify-content: flex-start;
+                align-items: center;
+                text-transform: none;
+                color: #fff;
+                padding: 15px 10px;
+                &:hover {
+                    background-color: var(--blue);
+                }
+            }
+        }
+    }
+
+    &:hover {
+        display: flex;
+    }
+}

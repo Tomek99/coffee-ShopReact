@@ -1,0 +1,23 @@
+.headerSection {
+    font-size: 5rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+
+    span {
+        text-transform: uppercase;
+        color: var(--main-color);
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .headerSection {
+        font-size: 4.5rem;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .headerSection {
+        font-size: 3.5rem;
+    }
+}
